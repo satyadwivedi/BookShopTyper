@@ -1,0 +1,48 @@
+
+###
+GET http://localhost:4004/odata/v4/admin/$metadata
+
+###
+POST http://localhost:4004/odata/v4/admin/Authors
+Content-Type: application/json
+
+{
+  "ID": 101,
+  "name": "George R. R. Martin"
+}
+
+###
+GET http://localhost:4004/odata/v4/admin/Authors
+
+###
+GET http://localhost:4004/odata/v4/admin/Books
+
+###
+POST http://localhost:4004/odata/v4/admin/Books
+Content-Type: application/json
+
+{
+  "ID" : 1, 
+  "title"    : "song of ice and fire",
+  "descr"    : "song of ice and fire",
+  "author"   : { "ID": 101 },
+  "genre"    : { "ID": 11 },
+  "stock"    : 100,
+  "price"    : 10.20,
+  "currency" : {"code": "EUR"}
+}
+
+
+
+###
+POST http://localhost:4004//odata/v4/admin/someAction
+Content-Type: application/json
+
+{
+    "ID": "1213"
+}
+
+
+
+
+
