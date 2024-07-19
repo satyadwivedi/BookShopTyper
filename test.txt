@@ -1,0 +1,5 @@
+Introduction:
+
+In this blog, we'll dive into the TypeScript ecosystem using tools like @cap-js/cds-typer, cds-ts, and node-ts.
+
+To get started, we’ll create a bookshop sample project with TypeScript. You can use any IDE you prefer, such as VS Code or BAS.
