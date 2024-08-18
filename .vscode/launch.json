@@ -15,6 +15,19 @@
       "skipFiles": [
         "<node_internals>/**"
       ]
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "cds-ts serve",
+      "cwd": "${workspaceFolder}/BookShopTyper",
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ]
     }
   ]
 }
