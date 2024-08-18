@@ -35,12 +35,16 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:4004//odata/v4/admin/someAction
+POST http://localhost:4004/odata/v4/admin/someAction
 Content-Type: application/json
 
 {
     "ID": "1213"
 }
+
+###
+GET http://localhost:4004/odata/v4/admin/findBookStores()
+
 
 
 

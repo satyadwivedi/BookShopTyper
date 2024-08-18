@@ -55,4 +55,10 @@ exports.default = (srv) => {
             return 'S';
         return 'E';
     }));
+    srv.on('findBookStores', (req) => __awaiter(void 0, void 0, void 0, function* () {
+        console.log('start findBookStores');
+        const aStores = yield cds_1.default.run(`SELECT * FROM COM_BOOKSTORE_STORES`);
+        console.log('aStores', aStores);
+        return aStores;
+    }));
 };

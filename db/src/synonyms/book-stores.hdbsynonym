@@ -1,0 +1,8 @@
+{ 
+  "COM_BOOKSTORE_STORES": { 
+    "target": { 
+      "object": "COM_BOOKSTORE_STORES", 
+      "schema" : "STOREDB" 
+    }
+  }
+}

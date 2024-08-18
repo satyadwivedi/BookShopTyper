@@ -38,5 +38,16 @@ export default (srv: Service )=>  {
       return 'E'
 
     })
+
+    srv.on('findBookStores', async (req: Request) => {
+      console.log('start findBookStores')
+
+     const aStores =  await cds.run(`SELECT * FROM COM_BOOKSTORE_STORES`) 
+
+     console.log('aStores', aStores)
+
+     return aStores
+
+    })
 }  
 

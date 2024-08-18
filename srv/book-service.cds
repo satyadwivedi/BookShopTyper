@@ -6,4 +6,6 @@ service AdminService  {
   entity Authors as projection on my.Authors;
 
   action someAction(ID: String(10)) returns String;
+
+  function findBookStores () returns array of String; 
 }
